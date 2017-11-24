@@ -10,9 +10,11 @@ JCE_FLAVORS=(standard unlimited)
 # Dockerfile.jdk.tpl
 # Dockerfile.jdk-dcevm.tpl
 
-JAVA_VERSIONS=(7-80-15 8-92-14 8-102-14 8-111-14 8-121-13-e9e7ea248e2c4826b92b3f075a80e441 8-131-11-d54c1d3a095b4ff2b6607d096fa80163 8-141-15-336fa29ff2bb4ef291e347e091f7f4a7 8-144-01-090f390dda5b47b9b721c7dfaa008135)
+JAVA_VERSIONS=(7-80-15 8-92-14 8-144-01-090f390dda5b47b9b721c7dfaa008135 8-152-16-aa0333dd3019491ca4f6ddbe78cdb6d0)
 
-GLIBC_VERSION="2.23-r3"
+# http://download.oracle.com/otn-pub/java/jdk/8u152-b16/aa0333dd3019491ca4f6ddbe78cdb6d0/jdk-8u152-linux-x64.tar.gz
+
+GLIBC_VERSION="2.26-r0"
 
 gen_dockerfile() {
   JVM_PACKAGE="$1"
